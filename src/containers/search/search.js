@@ -31,7 +31,7 @@ const Search = props =>{
 
   useEffect(() => {
 
-    axios.get('https://geo.ipify.org/api/v1?apiKey=at_LQPWHE1FcGWqiHVlgXTy0fHlSNCFS')
+    axios.get(`https://geo.ipify.org/api/v1?apiKey=${process.env.REACT_APP_API_KEY}`)
       .then(fetchedData => {
           const data = fetchedData.data;
 
@@ -68,13 +68,13 @@ const Search = props =>{
     const ipAddress = ip;
 
 
-    let url = 'https://geo.ipify.org/api/v1?apiKey=at_LQPWHE1FcGWqiHVlgXTy0fHlSNCFS&ipAddress=';
+    let url = `https://geo.ipify.org/api/v1?apiKey=${process.env.REACT_APP_API_KEY}&ipAddress=`;
 
     if(ip.match(webRegex)){
-      url = 'https://geo.ipify.org/api/v1?apiKey=at_LQPWHE1FcGWqiHVlgXTy0fHlSNCFS&domain='
+      url = `https://geo.ipify.org/api/v1?apiKey=${process.env.REACT_APP_API_KEY}&domain=`
     }
     if(ip.match(emailRegex)){
-      url = 'https://geo.ipify.org/api/v1?apiKey=at_LQPWHE1FcGWqiHVlgXTy0fHlSNCFS&email='
+      url = `https://geo.ipify.org/api/v1?apiKey=${process.env.REACT_APP_API_KEY}&email=`
     }
 
     axios.get(url+ipAddress)
