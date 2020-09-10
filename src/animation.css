@@ -1,0 +1,32 @@
+
+.animate-enter-active{
+  transition: all .5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
+  animation: slideBottom .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.animate-exit-active{
+  transition: all .5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
+  animation: slideTop .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+}

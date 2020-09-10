@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --color-dark-grey: hsl(0, 0%, 17%);
+  --color-grey: hsl(0, 0%, 59%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+  font-size: 62.5%;
 }
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: 'Rubik', sans-serif;
+  color: var(--color-dark-grey);
+  font-weight: 400;
+}
+
+.leaflet-container{
+  height: 80vh;
+  width: 100%;
+}
+
+.icon{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+
+.heading-lg{
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+.heading-md{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.heading-sm{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+
+.color-grey{
+  color: var(--color-grey);
+}
+
+.color-dark-grey{
+  color: var(--color-dark-grey);
+}
+
+.color-white{
+  color: #fff;
+}
+
+#mapid{
+  height: 80vh;
+  padding: 2rem 0;
+}
+
+@media (max-width: 50em) {
+  html{
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 75em) {
+  html{
+    font-size: 56.25%;
+  }
+}
+
+
+/*.leaflet-zoom-animated img{
+  transform: translate(0) !important;
+}*/
+
+

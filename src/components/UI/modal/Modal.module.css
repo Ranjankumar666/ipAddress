@@ -1,0 +1,45 @@
+.Modal {
+    position: fixed;
+    z-index: 500;
+    background-color: white;
+    width: 70%;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    left: 15%;
+    top: 30%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    animation: openUp 100ms linear;
+    -webkit-backdrop-filter: blur(.3px);
+    backdrop-filter: blur(.3px);
+}
+
+.Modal li{
+    list-style: none;
+    font-weight: 700;
+}
+
+.MarginTop{
+    margin-top: 10px;
+}
+
+@keyframes openUp{
+    0%{
+        transform: translateY(-100vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 500px;
+        left: calc(50% - 250px);
+        display: flex;
+        flex-flow: column;
+    }
+
+
+}

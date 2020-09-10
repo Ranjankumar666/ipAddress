@@ -1,0 +1,12 @@
+.input{
+  padding: 1rem 5rem;
+  display: inline-block;
+  border: none;
+  color: var(--color-grey);
+  font-size: 2rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.input:active, .input:focus{
+  outline: none;
+}

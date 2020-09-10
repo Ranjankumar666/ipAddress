@@ -1,0 +1,43 @@
+.search{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.searchDetails{
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-image: url(../../images/pattern-bg.png);
+  background-size: cover;
+  position: relative;
+  padding: 2rem 0;
+  padding-bottom: 9rem;
+  padding-top: 4.5rem;
+}
+.input{
+  display: flex;
+  justify-content: center;
+}
+.btn{
+  padding: 1rem 2rem;
+  background: #000;
+  color: white;
+  font: inherit;
+  border: none;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  cursor: pointer;
+}
+
+.btn:active, .btn:focus{
+  outline: none;
+}
+
+.btn:hover, .btn:active{
+  background-color: #333;
+}
+
+
+
+
